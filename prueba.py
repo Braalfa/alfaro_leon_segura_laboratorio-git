@@ -6,4 +6,5 @@ COPYRIGHT
 
 
 =======
-print("hola broders")   
+def suma(x,y):
+    print(x+y)
