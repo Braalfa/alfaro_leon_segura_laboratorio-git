@@ -1,0 +1,13 @@
+#!/bin/bash
+
+git diff --cached --name-only -- *.{java,cs,js,ts,py} | while read FILE; do
+echo "$FILE"
+    # Courtesy of swytsh from the comments below.
+    if ! grep -qE "CopyRight" "$FILE"; then
+	
+	echo "Error en $FILE"
+	echo "Todos los archivos de codigo deben de incluir un comentario de copyrigth"
+    	exit 1
+    fi
+
+done || exit $?
