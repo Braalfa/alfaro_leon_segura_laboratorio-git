@@ -1,9 +1,7 @@
 <<<<<<< Updated upstream
-
+print("hola broders")
 =======
 <<<<<<< HEAD
 COPYRIGHT
 
-
-=======
-print("hola broders")   
+print("hola hermanos")
