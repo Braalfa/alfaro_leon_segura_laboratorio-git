@@ -4,6 +4,6 @@ MSG="$1"
 
 if ! [[ $(cat $1) =~  ^JIRA-[0-9][0-9]*.*$ ]];then
     cat "$MSG"
-    echo "Your commit message must contain the word 'updated'"
+    echo "The message must start with the JIRA item"
     exit 1
 fi
